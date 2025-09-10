@@ -19,14 +19,37 @@ Use console.log() to clearly show the before-and-after type conversions.
 */
 
 
-let result = "5" - 2;
+let result = Number("5") - 2;
 console.log("The result is: " + result);
 
-let isValid = Boolean("false");
+let condition = "false";
+let isValid = (condition == "false")
 if (isValid) {
     console.log("This is valid!");
 }
 
-let age = "25";
+let age = Number("25");
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
+
+//implicit conversion
+var weight = "123lb";
+console.log (typeof(weight));
+console.log(weight);
+
+weight = 100 //implicit converstion , previous string type now changed to number type
+console.log (weight);
+console.log (typeof(weight));
+
+//explicit conversion
+var phoneNumber ;
+console.log(phoneNumber);
+
+console.log (typeof(phoneNumber));
+
+phoneNumber = "3141112222"; //implicit converstion
+var contact = Number(phoneNumber); //exxplcit
+console.log (phoneNumber);
+console.log (typeof(phoneNumber));
+
+

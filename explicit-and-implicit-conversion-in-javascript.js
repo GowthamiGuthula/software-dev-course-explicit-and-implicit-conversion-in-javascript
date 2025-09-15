@@ -47,8 +47,8 @@ console.log(phoneNumber);
 
 console.log (typeof(phoneNumber));
 
-phoneNumber = "3141112222"; //implicit converstion
-var contact = Number(phoneNumber); //exxplcit
+phoneNumber = "3141112222"; 
+var contact = phoneNumber.toString(); //exxplcit
 console.log (phoneNumber);
 console.log (typeof(phoneNumber));
 
